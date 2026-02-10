@@ -1,0 +1,77 @@
+
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: auto 1fr 260px;
+  grid-template-areas:
+    "sidebar topbar"
+    "sidebar video"
+    "sidebar bottom";
+  background-color: #000;
+  color: #ffffff;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  /* Sidebar handles its own internal layout */
+}
+
+.topbar {
+  grid-area: topbar;
+}
+
+.video-panel {
+  grid-area: video;
+  overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+.dashboard-bottom {
+  grid-area: bottom;
+  height: 260px; /* Keep bottom panel fixed height */
+  display: flex;
+
+}
+
+/* Tablet & Mobile Layout */
+@media (max-width: 999px) {
+  .dashboard {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "topbar"
+      "video"
+      "sidebar"
+      "bottom";
+    overflow-y: auto;
+  }
+
+  .sidebar {
+    height: auto;
+    overflow-y: visible;
+    border-right: none;
+    border-bottom: 1px solid #1f2933;
+  }
+
+  .video-panel {
+    height: 400px; /* Fixed height for video on smaller screens */
+  }
+
+  .dashboard-bottom {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video-panel {
+    height: 300px;
+  }
+}

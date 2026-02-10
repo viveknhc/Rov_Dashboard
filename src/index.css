@@ -1,0 +1,91 @@
+
+/* Light Mode Overrides */
+body.light-mode {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+body.light-mode .dashboard {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+body.light-mode .sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+}
+
+body.light-mode .sidebar .title h2 {
+  color: #0284c7;
+}
+
+body.light-mode .sidebar .title h4,
+body.light-mode .sidebar .sensor-wrap h3,
+body.light-mode .sidebar .sensor,
+body.light-mode .sidebar .sensor span {
+  color: #334155;
+}
+
+body.light-mode .sidebar .sensor .status {
+  background-color: #e2e8f0;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+body.light-mode .topbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+body.light-mode .topbar .content-box {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+body.light-mode .topbar .content-box span,
+body.light-mode .topbar .content-box i {
+  color: #334155;
+}
+
+body.light-mode .charts-panel,
+body.light-mode .logs-panel {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+body.light-mode .logs-panel h3 {
+  color: #0f172a;
+}
+
+body.light-mode .timeline-item {
+  color: #334155;
+}
+
+body.light-mode .timeline-time {
+  color: #64748b;
+}
+
+/* Keep video panel dark for better contrast */
+body.light-mode .video-panel {
+  border: 1px solid #e2e8f0;
+}
+
+body.light-mode .controls {
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+body.light-mode .controls h3,
+body.light-mode .controls .limit span,
+body.light-mode .controls .limit strong {
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+body.light-mode .controls .limit .limit-controls button {
+  background-color: #e2e8f0;
+  color: #334155;
+  border-color: #cbd5e1;
+}

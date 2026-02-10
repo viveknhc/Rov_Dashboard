@@ -1,0 +1,33 @@
+.charts-panel {
+  flex: 3;
+  display: flex;
+  gap: 12px;
+      padding: 0 12px 0 0;
+  background: #000;
+}
+
+
+.chart-box {
+  flex: 1;
+  background: #181818;
+
+  padding: 8px;
+}
+
+.chart-box h4 {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #94a3b8;
+}
+
+@media (max-width: 999px) {
+  .charts-panel {
+    flex-direction: column;
+    padding: 0 0 20px 0;
+  }
+  
+  .chart-box {
+    min-height: 200px;
+  }
+}
+

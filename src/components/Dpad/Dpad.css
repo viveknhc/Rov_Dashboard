@@ -1,0 +1,172 @@
+.controller {
+  position: relative;
+      width: 216px;
+    height: 230px;
+}
+
+.dpad h3{
+font-size: 18px;
+    color: #fff;
+    padding: 0 0 15px 0;
+}
+
+
+.dpad{
+    padding: 0 20px 20px 20px;
+}
+
+
+.button {
+  position: absolute;
+  background: #3a3a3a;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover {
+  background: #4a4a4a;
+  transform: scale(1.05);
+}
+
+.button:active,
+.button.active {
+  background: #2a2a2a;
+  transform: scale(0.95);
+}
+
+.arrow-btn {
+      width: 40px;
+    height: 40px;
+  border-radius: 5px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Up Button */
+.up {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.up:hover,
+.up:active,
+.up.active {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.up:active,
+.up.active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.up .arrow {
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+/* Down Button */
+.down {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down:hover,
+.down:active,
+.down.active {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.down:active,
+.down.active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.down .arrow {
+  border-width: 20px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Left Button */
+.left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left:hover,
+.left:active,
+.left.active {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.left:active,
+.left.active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.left .arrow {
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+/* Right Button */
+.right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right:hover,
+.right:active,
+.right.active {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.right:active,
+.right.active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.right .arrow {
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* Stop Button */
+.stop {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  
+    border-radius: 37%;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.stop:hover {
+  background: #3a3a3a;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.stop:active,
+.stop.active {
+  background: #1a1a1a;
+  transform: translate(-50%, -50%) scale(0.95);
+}
