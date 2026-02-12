@@ -1,0 +1,88 @@
+.logs-panel{
+ flex: 1;
+    height: -webkit-fill-available;
+    overflow: scroll;
+}
+
+.logs-panel h3{
+  font-size: 16px;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+
+      font-size: 15px;
+    color: #ececec;
+    margin-bottom: 0px;
+    padding: 0 0 20px 0;
+
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+ left: -51px;
+  top: 12px;
+  bottom: -60px;
+  width: 2px;
+  background-color: #333;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 18px;
+    height: 18px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 3px solid #0a7ea4;
+  box-shadow: 0 0 0 4px #000;
+}
+
+.timeline-marker::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0a7ea4;
+}
+
+.timeline-time {
+   font-size: 14px;
+
+  color: #666;
+  margin-bottom: 0px;
+}
+
+.timeline-content {
+     font-size: 12px;
+
+  color: #0a7ea4;
+}
+
+@media (max-width: 999px) {
+  .logs-panel {
+    height: 300px; /* Fixed height for scrollable logs in mobile layout */
+    margin-bottom: 20px;
+  }
+}
